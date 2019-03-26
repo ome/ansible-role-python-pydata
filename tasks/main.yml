@@ -19,5 +19,6 @@
     - python-numexpr
     - python-pandas
     - python-tables
+    - python2-scikit-image
     - scipy
     - PyYAML

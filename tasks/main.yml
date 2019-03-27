@@ -2,22 +2,22 @@
 # tasks file for roles/python-pydata
 
 - name: system packages | install epel repo
-  become: yes
+  become: true
   yum:
     name: epel-release
     state: present
 
 - name: system packages | install python data analysis tools
-  become: yes
+  become: true
   yum:
-    name: "{{ item }}"
+    name:
+      - numpy
+      - python-ipython
+      - python-matplotlib
+      - python-numexpr
+      - python-pandas
+      - python-tables
+      - python2-scikit-image
+      - scipy
+      - PyYAML
     state: present
-  with_items:
-    - numpy
-    - python-ipython
-    - python-matplotlib
-    - python-numexpr
-    - python-pandas
-    - python-tables
-    - scipy
-    - PyYAML

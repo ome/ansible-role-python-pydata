@@ -9,6 +9,7 @@ galaxy_info:
     - name: EL
       versions:
         - 7
+  role_name: python_pydata
   galaxy_tags: []
 
 dependencies: []
